@@ -1,0 +1,16 @@
+header{
+    background-image: url(imagens/topp.jpg);
+}
+
+.produtos{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    /*object-fit cover corta a imagem em vez de redimensionar*/
+    border-radius: 50%;
+    /*transição para border-radius:0 no hover
+    transition: 1s;*/
+}
+.produtos:hover{
+    border-radius: 0;
+}
