@@ -6,20 +6,43 @@
 }
 
 .topo{
-    width:640px;
-    height: 313px;
+    max-width:768px;
+    max-height: 376px;
     background-image: url(../imagens/topp.jpg);
     background-size: cover;
 }
 
-@media (min-width:640px){
+@media (min-width:768px){
 
+    .topo{   
+        min-width:768px;
+        min-height: 376px;
+        max-width: 992px;
+        max-height: 486px;
+        background-image: url(../imagens/topp.jpg);
+        background-size: cover;
+    }
 
-.topo{
-    width: 1920px;
-    height: 939px;
-    background-image: url(../imagens/topp.jpg);
-    background-size: cover;
+@media (min-width:992px){
+
+    .topo{   
+        min-width: 992px;
+        min-height: 486px;
+        max-width: 1200px;
+        max-height: 587px ;
+        background-image: url(../imagens/topp.jpg);
+        background-size: cover;
+    }
+
+@media (min-width:1200px){
+    .topo{
+        min-width: 1200px;
+        min-height: 587px;
+        max-width: 1920px;
+        max-height: fit-content;
+        background-image: url(../imagens/topp.jpg);
+        background-size: cover;
+    }
 }
 
 
