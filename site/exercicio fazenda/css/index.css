@@ -1,63 +1,214 @@
 *{
     margin: 0;
     font-weight: normal;
-    border: solid 1px #000000;
+    /*border: solid 1px #000000;*/
     padding: 0;
+    text-decoration: none;
 }
+
 
 .topo{
     max-width:768px;
-    max-height: 376px;
+    min-height: 300px;
     background-image: url(../imagens/topp.jpg);
     background-size: cover;
+    background-position: center;
+}
+.container{
+    margin: 0 auto;
+    min-height: 300px;
+    /*justify-content: center;*/
+}
+.container>p{
+    text-align: center;
+}
+.menu{
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li{
+    margin-left: 10px;
+}
+.menu a{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+.menu ul li:hover{
+    text-decoration: underline;
+}
+.nomeempresa{
+    margin-right: auto;
+    font-size: 12px;
+}
+.titulos>h1 , .nomeempresa , .menu, .section1 a, .section2 h2 {
+    text-transform: uppercase;
+}
+.topo .titulos, .section1 .titulos, .section2 .titulos, .section3 .titulos, h3{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.topo .titulos{
+    margin: 160px auto 0px auto;
+}
+.section3 .container .titulos{
+    margin: 90px auto 0px auto;
+}
+#logomarca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section1{
+    background-color: rgba (245, 245,245, 1);
+}
+.section1>.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .leia {
+    margin: 20px;
+    padding: 10px;
+    border: solid 0.5px rgba(230, 188, 145, 1);
+}
+.section1 .leia a{
+    color: black;
+}
+.section1 h2, .section1 h1, .section1 p, #logomarca, .section1 .titulos{
+    margin-bottom: 5px;
+}
+.produtos2 p {
+    text-align: center;
+}
+.topo h2, .section1 h2, .section3 h2, .section4 h2{
+    color: rgba(230, 188, 145, 1);
+    font-size: 16px;
+}
+.topo h1, .section3 h1{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+}
+.section4 p, .section1 p{
+    color: rgb(119, 119 ,119);
+}
+.section3{
+    max-width:768px;
+    background-image: url(../imagens/plantacao.jpg);
+    background-position: center;
+    max-height: 280px;
 }
 
+.lacticinios, .legumes, .paes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lacticinios>img, .legumes>img, .paes>img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.section4 .container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.section4 .conteudo p{
+    margin: 50px auto auto 10px;
+}
 @media (min-width:768px){
 
     .topo{   
         min-width:768px;
-        min-height: 376px;
         max-width: 992px;
-        max-height: 486px;
-        background-image: url(../imagens/topp.jpg);
-        background-size: cover;
+        min-height: 400px;
+        /*max-height: 500px;*/
     }
+    .topo .titulos{
+        margin: 200px auto 0px auto;
+    }
+    .topo h2, .section1 h2, .section3 h2, .section4 h2{
+        font-size: 20px;
+    }
+    .topo h1, .section3 h1{
+        color: rgba(255, 255, 255, 1);
+        font-size: 24px;
+    }
+    .container{
+        max-width: 80%;
+        padding-bottom: 100px;
+    }
+    .nomeempresa, menu ul li{
+        font-size: 16px;
+    }
+
+    
+    .section3{
+        min-width:768px;
+        max-width: 992px;
+    }
+    .produtos2 a{
+        color: black;
+    }
+}
 
 @media (min-width:992px){
 
     .topo{   
         min-width: 992px;
-        min-height: 486px;
         max-width: 1200px;
-        max-height: 587px ;
-        background-image: url(../imagens/topp.jpg);
-        background-size: cover;
+        min-height: 500px;
+        /*max-height: 900px; */    
     }
-
-@media (min-width:1200px){
-    .topo{
-        min-width: 1200px;
-        min-height: 587px;
-        max-width: 1920px;
-        max-height: fit-content;
-        background-image: url(../imagens/topp.jpg);
-        background-size: cover;
+    .topo .titulos{
+        margin: 300px auto 0px auto;
+    }
+    .topo h2, .section1 h2, .section3 h2 .section4 h2{
+        font-size: 24px;
+    }
+    .topo h1, .section3 h1{
+        color: rgba(255, 255, 255, 1);
+        font-size: 28px;
+    }
+    .container{
+        max-width: 80%;
+    }
+    .section3{
+        min-width: 992px;
+        max-width: 1200px;
+    }
+    .produtos2{
+        display:flex;
+        justify-content: space-between;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width:1200px){
+    .topo {
+        min-width: 1200px;
+        max-width: 100%;
+        min-height: 750px;
+        background-position: top;
+    }
+    .topo .titulos{
+        margin: 500px auto 0px auto;
+    }
+    .section3{
+        min-width: 1200px;
+        max-width: 100%;
+    }
+    .topo h1, .section3 h1{
+        color: rgba(255, 255, 255, 1);
+        font-size: 28px;
+    }
+    
 }
