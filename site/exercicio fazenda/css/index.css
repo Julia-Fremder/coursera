@@ -5,8 +5,6 @@
     padding: 0;
     text-decoration: none;
 }
-
-
 .topo{
     max-width:768px;
     min-height: 300px;
@@ -44,10 +42,10 @@
     margin-right: auto;
     font-size: 12px;
 }
-.titulos>h1 , .nomeempresa , .menu, .section1 a, .section2 h2 {
+h1 , .nomeempresa , .menu, .section1 a, .section2 h2, .conteudo a {
     text-transform: uppercase;
 }
-.topo .titulos, .section1 .titulos, .section2 .titulos, .section3 .titulos, h3{
+.topo .titulos, .section1 .titulos, .section2 .titulos, .section3 .titulos, .section4 .titulos2, h3{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -73,7 +71,7 @@
     justify-content: center;
     align-items: center;
 }
-.section1 .leia {
+.section1 .leia, .section4 a {
     margin: 20px;
     padding: 10px;
     border: solid 0.5px rgba(230, 188, 145, 1);
@@ -121,9 +119,19 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    
 }
 .section4 .conteudo p{
     margin: 50px auto auto 10px;
+}
+.section4 .titulos2{
+    min-width: 50%;
+}
+.section4 h1, .section4 h2{
+    min-width: 100%;
+}
+.section4 .conteudo{
+    min-width: 50%;
 }
 @media (min-width:768px){
 
