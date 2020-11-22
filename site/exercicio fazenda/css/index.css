@@ -1,67 +1,40 @@
 *{
     margin: 0;
+    font-weight: normal;
+    border: solid 1px #000000;
+    padding: 0;
 }
-html, body{
-    height: 100%;
-}
+
 .topo{
-    min-height: 100%;
+    width:640px;
+    height: 313px;
     background-image: url(../imagens/topp.jpg);
     background-size: cover;
-    background-position: top center;  
 }
-.container{
-    width: 80%;
-    margin: auto;
-}
-.menu{
-    display: flex;
-    /*padding pra não ficar colado na barra de navegacao acima*/
-    padding: 10px;
-    text-transform: uppercase;
-    
-}
-.logo {
-    margin-right: auto;  
-    /*margin: 0 auto 0 0;*/
-}
-.menu ul{
-    list-style-type: none;
-    display: flex;
-    /*margin-left: auto;*/
-}
-.menu ul li{
-    flex: 1;
-    margin: 0 10px;
-    
-}
-.menu a{
-    text-decoration: none;
-    color: seashell;
-}
-.titulo {
-    text-align: center;
-    margin-top: 400px;
-    text-transform: uppercase;
- }
- h1{
-    color: seashell;
-     font-size: 32px;
- }
- h2{
-     color: tan;
-     font-size: 24px;
- }
 
-.produtos{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    /*object-fit cover corta a imagem em vez de redimensionar*/
-    border-radius: 50%;
-    /*transição para border-radius:0 no hover
-    transition: 1s;*/
+@media (min-width:640px){
+
+
+.topo{
+    width: 1920px;
+    height: 939px;
+    background-image: url(../imagens/topp.jpg);
+    background-size: cover;
 }
-.produtos:hover{
-    border-radius: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
