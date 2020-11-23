@@ -6,6 +6,9 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+a{
+    color: black;
+}
 @font-face {
     /*para isso funcionar devemos ter o arquivo da fonte, pegar no Dafont ou outro site de fontes gratis;
     pegar o gerador web de fontes para transformar em arquivos e depois abrir um font fac3e pra cada fonte
