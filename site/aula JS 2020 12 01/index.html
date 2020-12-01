@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .buttons{
+            margin: 20px auto 20px 5px;
+        }
+        input[type="button"]{
+            background-color: cornflowerblue ;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+            color: darkblue;
+            font-weight: 600;
+        }
+        .item{
+            font-weight: 800;
+        }
+        p{
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Funções JS</h1>
+    <p>Basicamente, temos as seguintes funções ou os comandos das linguagens:
+        <br><span class="item">Funções internas</span> - já parte da sintaxe da linguagem.
+    <br><span class="item">Funções externas </span>- criadas pelo desenvolvedor.</p>
+    <div>
+        Valor: <input type="text" id="valor1">
+    </div>
+    <div class="buttons">
+        <input type="button" value="Função 1" onclick="funcao01()">
+   </div>
+    <p> <span class="item">Função simples:</span> executa alguma coisa simples.<br>Exemplo:<span>function</span> funcao01(){
+            <span class="italic">var </span>x = document.getElementById('valor1').value;
+            <span class="italic">var </span>resultado = x * 2;
+        
+            alert('O dobro é: ' + resultado);
+        }
+    </p><span class="item"> Função com parâmetros:</span> executa a função de acordo com o parâmetro atribuído. <br> Exemplos: 
+    <span class="italic">function </span> funcao02(numero){
+        <span class="italic">var </span>x = parseFloat(numero);
+        alert('O dobro de ' + numero + 'é' + resultado)
+    } funcao02(57), qnd clica no botão funcao02, aparece no alert 'o dobro de 57 é 114'
+    <br>
+    <div class="buttons">
+        <input type="button" value="Função 2" onclick="funcao02(57)">
+        <input type="button" value="Função 3" onclick="alert(funcao03(4, 9))">
+    </div>
+    <span class="italic">function </span> funcao03 (x, y){
+        <span class="italic">var </span>resultado = parseFloat(x) * parseFloat(y);
+        alert('o resultado é: ' + resultado);
+    }
+    funcao03(4, 9); --> aparece no alert 'o resultado é 36'.<br>
+    <p><span class="item"> Funções que retornam dados:</span> podem receber parâmetros ou não.
+       <span class="italic">return</span> true or false, aplica uma condição para a função ser executada, por exemplo o link 'clique aqui'.<br> 
+       <span class="italic">function </span>funcao05(){
+        <span class="italic">var</span> v1= document.getElementById('valor1').value;
+    
+        if (v1=='123'){
+            return true;
+        }else {
+            return false;
+        }
+    }--> dentro da tag link: a href="file02.html" onclick="return funcao05()">Clique aqui--><br>
+       <span class="italic">function</span> funcao04(){
+        <span class="italic">var</span> x = 4;
+        <span class="italic">var</span> y = 33;
+        <span class="italic">var</span> z = x + y;
+    
+        return z;
+    } --> desse jeito ela executa mas não mostra nada. Para mostrar pode, por exemplo colocar assim: alert(funcao04()); ou ela pode servir de parâmetro para outra funcao, como a funcao02 // É como se a funcao 04 se tornasse ela mesma uma variável-->-input type="button" value="Funcao 4" onclick="funcao02(funcao04())"->
+    <br>//<span class="italic">var</span> n1 = 4 + funcao04();
+    </p>
+    <div class="buttons">
+        <a href="file02.html" onclick="return funcao05()">Clique aqui</a>
+        <input type="button" value="Função 4" onclick="console.log(funcao04())">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
