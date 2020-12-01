@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    font-weight: normal;
+    /*border: solid 1px #000000;*/
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+@font-face {
+    /*para isso funcionar devemos ter o arquivo da fonte, pegar no Dafont ou outro site de fontes gratis;
+    pegar o gerador web de fontes para transformar em arquivos e depois abrir um font fac3e pra cada fonte
+    dentro do font face serve para inventar o nome que será usado por essa fonte*/
+    font-family: "Allura-Regular";
+    src: url(../imagens/Allura-Regular.ttf),
+         url(../imagens/Allura-Regular.eot),
+         url(../imagens/Allura-Regular.woff),
+         url(../imagens/Allura-Regular.woff2),
+         url(../imagens/Allura-Regular.sgv);   
+}
+.topo {
+    background-color: black;
+    /*max-width: 768px;*/
+    /*display: flex;   */ 
+}
+.container{
+    margin: 0px auto;
+    width: 80%;
+}
+.menu{
+    display: flex;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    align-items: center;
+    /*width: 100%;*/
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li{
+    margin-left: 10px;
+}
+.menu a{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+.menu ul li:hover{
+    text-decoration: underline;
+}
+.nomeempresa{
+    margin-right: auto;
+    font-size: 12px;
+}
+.titulos{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 50px auto 10px auto;
+}
+.titulos h1{
+    margin: 0px auto;
+    text-transform: uppercase;
+}
+.titulos h2{
+    margin: 0px auto;
+    font-family: Allura-Regular;
+    color: rgba(230, 188, 145, 1);   
+}
+p {
+    font-size: 12px;
+}
+.partecima{
+    margin-bottom: 15px;
+}
+.picture{
+    height: 150px;
+}
+.partebaixo{
+    display: flex;
+    flex: 1;
+}
+
+@media (min-width:768px){
+    .topo {
+       /* max-width: 992px;*/ 
+    }
+}

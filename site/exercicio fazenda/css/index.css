@@ -63,7 +63,7 @@ h2{
     margin-right: auto;
     font-size: 12px;
 }
-h1 , .nomeempresa , .menu, .section1 a, .section2 h2, .conteudo a {
+h1 , .nomeempresa , .menu, .section1 a, .conteudo a {
     text-transform: uppercase;
 }
 .section1 .titulos, .section2 .titulos, .section4 .titulos2, h3{
@@ -122,7 +122,7 @@ h1 , .nomeempresa , .menu, .section1 a, .section2 h2, .conteudo a {
 }
 .topo h2, .section1 h2, .section3 h2, .section4 h2{
     color: rgba(230, 188, 145, 1);
-    font-size: 16px;
+    font-size: 32px;
 }
 .topo h1, .section3 h1{
     color: rgba(255, 255, 255, 1);
@@ -193,7 +193,7 @@ h1 , .nomeempresa , .menu, .section1 a, .section2 h2, .conteudo a {
         margin: 200px auto 0px auto;
     }
     .topo h2, .section1 h2, .section3 h2, .section4 h2{
-        font-size: 20px;
+        font-size: 40px;
     }
     .topo h1, .section3 h1{
         color: rgba(255, 255, 255, 1);
@@ -227,7 +227,7 @@ h1 , .nomeempresa , .menu, .section1 a, .section2 h2, .conteudo a {
         margin: 300px auto 0px auto;
     }
     .topo h2, .section1 h2, .section3 h2 .section4 h2{
-        font-size: 24px;
+        font-size: 50px;
     }
     .topo h1, .section3 h1{
         color: rgba(255, 255, 255, 1);
